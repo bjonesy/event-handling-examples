@@ -1,0 +1,19 @@
+<div class="dialog-content">
+  <button mat-icon-button disableRipple="true" mat-dialog-close class="close-button">
+    <mat-icon>clear</mat-icon>
+  </button>
+  <section class="confirm-action">
+    <div mat-dialog-title>
+      <span>{{ title }}</span>
+    </div>
+    <h4 mat-dialog-content>{{ message }}</h4>
+  </section>
+  <mat-dialog-actions class="pull-right">
+    <button mat-button color="primary" disableRipple="true" mat-dialog-close>
+      {{ cancelAction }}
+    </button>
+    <button mat-button color="primary" disableRipple="true" [mat-dialog-close]="true">
+      {{ confirmAction }}
+    </button>
+  </mat-dialog-actions>
+</div>

@@ -1,0 +1,38 @@
+{
+  // Editor Extension
+  "editor.formatOnSave": true,
+  // Prettier Extension
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 100,
+  "html.format.wrapLineLength": 85,
+  "typescript.suggest.autoImports": true,
+  "typescript.validate.enable": true,
+  // TSLint Extension
+  "tslint.enable": true,
+  "tslint.rulesDirectory": [
+    "node_modules/codelyzer",
+    "node_modules/angular-tslint-rules",
+    "node_modules/rxjs-tslint-rules",
+    "node_modules/tslint-config-prettier"
+  ],
+  "tslint.configFile": "tslint.json",
+  "tslint.autoFixOnSave": true,
+  // Typescript Hero
+  "typescriptHero.imports.grouping": [
+    "/angular/",
+    "/rxjs/",
+    "Modules",
+    "Plains",
+    "/@app/",
+    "/@environments/",
+    "Workspace",
+    {
+      "identifier": "Remaining",
+      "order": "desc"
+    }
+  ],
+  "typescriptHero.imports.organizeOnSave": true,
+  "typescriptHero.imports.multiLineWrapThreshold": 80,
+  "typescriptHero.imports.multiLineTrailingComma": false,
+  "typescript.tsdk": "./node_modules/typescript/lib"
+}

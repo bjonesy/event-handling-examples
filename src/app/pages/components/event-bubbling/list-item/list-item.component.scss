@@ -1,0 +1,12 @@
+:host {
+  .list-item {
+    &-content {
+      align-items: center;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+    }
+    &-id {
+      margin-right: 10px;
+    }
+  }
+}

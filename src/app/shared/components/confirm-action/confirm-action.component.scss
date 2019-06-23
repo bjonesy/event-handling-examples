@@ -1,0 +1,43 @@
+:host {
+  .dialog-content {
+    .close-button {
+      position: absolute;
+      right: 5px;
+      top: 1px;
+      background-color: transparent;
+      padding: 0;
+      min-width: auto;
+      &:focus,
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    .confirm-action {
+      .mat-dialog-title {
+        font-weight: 600;
+        grid-column: 1;
+        text-align: left;
+        span {
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .mat-dialog-actions {
+      padding: 40px 0 0 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    .mat-dialog-content {
+      overflow: initial;
+      font-weight: 400;
+    }
+
+    .pull-right {
+      float: right;
+    }
+  }
+}
